@@ -5,6 +5,8 @@ var app = express();
 
 app.use(express.static('public'));
 
+app.set('view engine', 'jade');
+
 app.get('/', homeController.index);
 app.get('/about', homeController.about);
 app.get('/*', homeController.noRoute);

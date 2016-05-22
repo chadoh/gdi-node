@@ -1,11 +1,9 @@
-var path = require('path');
-
 module.exports = {
   index: function (req, res) {
-    res.sendFile(path.join(__dirname, '../public', 'templates', 'index.html'));
+    res.render('index');
   },
   about: function (req, res) {
-    res.sendFile(path.join(__dirname, '../public', 'templates', 'about.html'));
+    res.render('about');
   },
   noRoute: function (req, res) {
     res.send('404 Not Found');
