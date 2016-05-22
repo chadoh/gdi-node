@@ -6,6 +6,6 @@ module.exports = {
     res.render('about');
   },
   noRoute: function (req, res) {
-    res.send('404 Not Found');
+    res.render('notFound');
   }
 }
